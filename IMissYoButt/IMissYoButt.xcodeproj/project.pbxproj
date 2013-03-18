@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51DA071516F6B421001E162E /* PZPeopleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DA071416F6B421001E162E /* PZPeopleListViewController.m */; };
 		51E840F116F6ADFE008BBE09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E840F016F6ADFE008BBE09 /* UIKit.framework */; };
 		51E840F316F6ADFE008BBE09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E840F216F6ADFE008BBE09 /* Foundation.framework */; };
 		51E840F516F6ADFE008BBE09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E840F416F6ADFE008BBE09 /* CoreGraphics.framework */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51DA071316F6B421001E162E /* PZPeopleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZPeopleListViewController.h; sourceTree = "<group>"; };
+		51DA071416F6B421001E162E /* PZPeopleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZPeopleListViewController.m; sourceTree = "<group>"; };
 		51E840ED16F6ADFE008BBE09 /* IMissYoButt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMissYoButt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E840F016F6ADFE008BBE09 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		51E840F216F6ADFE008BBE09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				51E840FF16F6ADFE008BBE09 /* PZAppDelegate.h */,
+				51DA071316F6B421001E162E /* PZPeopleListViewController.h */,
+				51DA071416F6B421001E162E /* PZPeopleListViewController.m */,
 				51E8410016F6ADFE008BBE09 /* PZAppDelegate.m */,
 				51E840F716F6ADFE008BBE09 /* Supporting Files */,
 			);
@@ -167,6 +172,7 @@
 			files = (
 				51E840FD16F6ADFE008BBE09 /* main.m in Sources */,
 				51E8410116F6ADFE008BBE09 /* PZAppDelegate.m in Sources */,
+				51DA071516F6B421001E162E /* PZPeopleListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +287,7 @@
 				51E8410C16F6ADFE008BBE09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

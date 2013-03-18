@@ -7,6 +7,7 @@
 //
 
 #import "PZAppDelegate.h"
+#import "PZPeopleListViewController.h"
 
 @implementation PZAppDelegate
 
@@ -14,6 +15,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    PZPeopleListViewController *peopleList = [[PZPeopleListViewController alloc] init];
+    [[self window] setRootViewController:peopleList];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
