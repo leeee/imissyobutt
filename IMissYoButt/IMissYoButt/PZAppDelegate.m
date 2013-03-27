@@ -8,6 +8,8 @@
 
 #import "PZAppDelegate.h"
 #import "PZPeopleListViewController.h"
+#import "PZStartView.h"
+#import "PZStartViewController.h"
 
 @implementation PZAppDelegate
 
@@ -15,8 +17,14 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    PZPeopleListViewController *peopleList = [[PZPeopleListViewController alloc] init];
-    [[self window] setRootViewController:peopleList];
+    PZStartViewController *startViewController = [[PZStartViewController alloc] init];
+    [[self window] setRootViewController:startViewController];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+    
+    CGRect screenRect = [[self window] bounds];
+    PZStartView *startView = [[PZStartView alloc] initWithFrame:screenRect];
+    [[self window] addSubview:startView];
+
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

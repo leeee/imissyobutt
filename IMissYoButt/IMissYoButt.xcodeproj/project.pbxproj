@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		513101F517026A0300DEF42E /* PZStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 513101F417026A0300DEF42E /* PZStartView.m */; };
+		513101F817026C7D00DEF42E /* PZStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 513101F717026C7D00DEF42E /* PZStartViewController.m */; };
 		51DA071516F6B421001E162E /* PZPeopleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DA071416F6B421001E162E /* PZPeopleListViewController.m */; };
 		51E840F116F6ADFE008BBE09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E840F016F6ADFE008BBE09 /* UIKit.framework */; };
 		51E840F316F6ADFE008BBE09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E840F216F6ADFE008BBE09 /* Foundation.framework */; };
@@ -20,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		513101F317026A0300DEF42E /* PZStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZStartView.h; sourceTree = "<group>"; };
+		513101F417026A0300DEF42E /* PZStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZStartView.m; sourceTree = "<group>"; };
+		513101F617026C7D00DEF42E /* PZStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZStartViewController.h; sourceTree = "<group>"; };
+		513101F717026C7D00DEF42E /* PZStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZStartViewController.m; sourceTree = "<group>"; };
 		51DA071316F6B421001E162E /* PZPeopleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZPeopleListViewController.h; sourceTree = "<group>"; };
 		51DA071416F6B421001E162E /* PZPeopleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZPeopleListViewController.m; sourceTree = "<group>"; };
 		51E840ED16F6ADFE008BBE09 /* IMissYoButt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMissYoButt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,9 +88,13 @@
 			isa = PBXGroup;
 			children = (
 				51E840FF16F6ADFE008BBE09 /* PZAppDelegate.h */,
+				51E8410016F6ADFE008BBE09 /* PZAppDelegate.m */,
 				51DA071316F6B421001E162E /* PZPeopleListViewController.h */,
 				51DA071416F6B421001E162E /* PZPeopleListViewController.m */,
-				51E8410016F6ADFE008BBE09 /* PZAppDelegate.m */,
+				513101F317026A0300DEF42E /* PZStartView.h */,
+				513101F417026A0300DEF42E /* PZStartView.m */,
+				513101F617026C7D00DEF42E /* PZStartViewController.h */,
+				513101F717026C7D00DEF42E /* PZStartViewController.m */,
 				51E840F716F6ADFE008BBE09 /* Supporting Files */,
 			);
 			path = IMissYoButt;
@@ -173,6 +183,8 @@
 				51E840FD16F6ADFE008BBE09 /* main.m in Sources */,
 				51E8410116F6ADFE008BBE09 /* PZAppDelegate.m in Sources */,
 				51DA071516F6B421001E162E /* PZPeopleListViewController.m in Sources */,
+				513101F517026A0300DEF42E /* PZStartView.m in Sources */,
+				513101F817026C7D00DEF42E /* PZStartViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
