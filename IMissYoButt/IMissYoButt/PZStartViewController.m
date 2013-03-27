@@ -14,10 +14,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-//        UITabBarItem *tbi = [self tabBarItem];
-//        [tbi setTitle:@"Hypnosis"];
-//        UIImage *i = [UIImage imageNamed:@"Hypno.png"];
-//        [tbi setImage:i];
     }
     
     return self;
