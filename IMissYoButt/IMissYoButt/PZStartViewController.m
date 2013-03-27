@@ -33,17 +33,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    /*CGRect bounds = [[UIScreen mainScreen] bounds];
-    CGPoint center;
-    center.x = bounds.origin.x + bounds.size.width/2.0;
-    center.y = bounds.origin.y + bounds.size.height/2.0;
-
-    CGRect buttonFrame = CGRectMake(center.x - 80.0, center.y * 1.5, 160.0, 40.0);
-    UIButton *addPeopleButton =  [[UIButton alloc] initWithFrame:buttonFrame];
-    [addPeopleButton addTarget:self action:NULL forControlEvents:UIControlEventTouchDown];
-    [addPeopleButton setTitle:@"Add People" forState:UIControlStateNormal];
-    [addPeopleButton setBackgroundColor:[UIColor clearColor]];
-    [self.view addSubview:addPeopleButton];*/
 }
 
 @end
