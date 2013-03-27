@@ -14,45 +14,47 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self setBackgroundColor:[UIColor greenColor]];
+        [self setBackgroundColor:[UIColor clearColor]];
     }
     return self;
 }
 
 - (void)drawRect:(CGRect)rect
 {
-    /*CGContextRef ctx = UIGraphicsGetCurrentContext();
     CGRect bounds = [self bounds];
-    
     CGPoint center;
     center.x = bounds.origin.x + bounds.size.width/2.0;
     center.y = bounds.origin.y + bounds.size.height/2.0;
+
+    NSString *titleText = @"I miss yo butt.";
+    NSString *subtitleText = @"Helping you unmiss butts since 2013.";
+    UIFont *titleFont = [UIFont boldSystemFontOfSize:28];
+    UIFont *subtitleFont = [UIFont boldSystemFontOfSize:20];
+
+    CGRect titleTextRect;
+    titleTextRect.size = [titleText sizeWithFont:titleFont];
+    titleTextRect.origin.x = center.x - titleTextRect.size.width/2.0;
+    titleTextRect.origin.y = center.y/2 - titleTextRect.size.height/2.0;
     
-    float maxRadius = hypot(bounds.size.width, bounds.size.height)/2.0;
-    
-    CGContextSetLineWidth(ctx, 10);
-    [[self circleColor] setStroke];
-    
-    for (float currentRadius = maxRadius; currentRadius > 0; currentRadius -= 20) {
-        CGContextAddArc(ctx, center.x, center.y, currentRadius, 0.0, M_PI*2.0, YES);
-        CGContextStrokePath(ctx);
-    }
-    
-    NSString *text = @"You are getting sleepy.";
-    UIFont *font = [UIFont boldSystemFontOfSize:28];
-    
-    CGRect textRect;
-    textRect.size = [text sizeWithFont:font];
-    textRect.origin.x = center.x - textRect.size.width/2.0;
-    textRect.origin.y = center.y - textRect.size.height/2.0;
-    
+    CGRect subtitleTextRect;
+    // This is wrong i don't know why
+    //    subtitleTextRect.size = [subtitleText sizeWithFont:subtitleFont forWidth:bounds.size.width - 20 lineBreakMode:NSLineBreakByWordWrapping];
+    subtitleTextRect.size = CGSizeMake(245, 50);
+    subtitleTextRect.origin.x = center.x - subtitleTextRect.size.width/2.0;
+    subtitleTextRect.origin.y = titleTextRect.origin.y + titleTextRect.size.height + 15;
+
     [[UIColor blackColor] setFill];
-    
-    CGSize offset = CGSizeMake(4, 3);
-    CGColorRef color = [[UIColor darkGrayColor] CGColor];
-    CGContextSetShadowWithColor(ctx, offset, 2.0, color);
-    
-    [text drawInRect:textRect withFont:font];*/
+ 
+    [titleText drawInRect:titleTextRect withFont:titleFont];
+    [subtitleText drawInRect:subtitleTextRect withFont:subtitleFont lineBreakMode:NSLineBreakByWordWrapping];
+
+    CGRect buttonFrame = CGRectMake(center.x - 80.0, center.y * 1.5, 160.0, 40.0);
+    UIButton *addPeopleButton =  [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    addPeopleButton.frame = buttonFrame;
+    [addPeopleButton addTarget:self action:NULL forControlEvents:UIControlEventTouchDown];
+    [addPeopleButton setTitle:@"Add People" forState:UIControlStateNormal];
+    [addPeopleButton setBackgroundColor:[UIColor clearColor]];
+    [self addSubview:addPeopleButton];
 }
 
 @end
